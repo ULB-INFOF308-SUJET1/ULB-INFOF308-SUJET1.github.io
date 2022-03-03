@@ -1,0 +1,68 @@
+@font-face
+{
+	font-family : "Lobster";
+	src : url('fonts/Lobster.ttf');
+}
+@font-face
+{
+	font-family : "PSX";
+	src : url('fonts/Iconic\ PSx.ttf');
+}
+@font-face
+{
+	font-family : "Computer";
+	src : url('fonts/Computerfont.ttf');
+}
+.body-index
+{
+	background-image: url(images/bckg.gif);
+	background-repeat: repeat;
+}
+.body-expl
+{
+	/*background-color: #B509F052;*/
+	background-image: url(images/bckg-expl.png);
+	background-repeat: repeat;
+}
+.title-nav
+{
+	font-family: 'Computer';
+}
+.title-expl
+{
+	font-family: 'Lobster';
+}
+.main-expl
+{
+	font-size: 18px;
+}
+.card
+{
+	border-radius: 20px;
+	box-shadow: 3px 5px 0px 0px #606362;
+}
+
+/*INDEX TRY BUTTON*/
+.whoa-cool-button {
+	font-family: 'PSX';
+	font-size: 9vh;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background: #0BBC66;
+	padding: 1px 40px;
+	padding-top: 20px;
+	border-radius: 20px;
+	box-shadow: 0px 15px 0px 0px #00695C;
+	cursor: pointer;
+	transition: .2s;
+}
+.whoa-cool-button:hover {
+	color:white;
+}
+.whoa-cool-button:active {
+	color:white;
+	text-decoration: none;
+	transform: translateY(14px);
+	box-shadow: 0px 1px 0px 0px #00695C;
+}

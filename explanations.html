@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!--Lien CSS base-->
+		<link rel = "stylesheet" href = "style.css">
+	
+		<!--Icone-->
+		<link rel ="icon" href="images/Numbers.png" type="image/x-icon"/>
+		
+		<title>DeepDigitReader</title>
+	</head>
+	<body class="text-black body-expl">
+			<nav class="navbar navbar-black nav-pills bg-black">
+				<div class="container-fluid">
+					<a class="navbar-brand text-white fs-2 title-nav" href="index.html">DeepDigitReader</a>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active text-black bg-light" aria-current="page" href="">Explanations</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="code.html">Try</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="credits.html">Credits</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<main class = "text-black p-5 main-expl">
+			<div class ="container">
+				<div class ="row text-start">
+					<h2 class="p-3 title-expl">Le Machine Learning</h2>
+					<div class ="col-6">
+						<p>Le machine learning est <span class="fw-bold">un ensemble de méthodes et d'algorithmes</span> qui permettent à une machine de <span class="text-decoration-underline">reconnaitre</span> certains <span class="fw-bold">« tendances »</span> à travers un <span class="fw-bold">« entrainement »</span> antérieur et donc permettre une machine <span class="text-decoration-underline">à prendre des décisions</span> sur base de son <span class="fw-bold">« expérience »</span> et pas sur base d’une logique encodé dans un logiciel.</p>
+						<p>De conséquence, cette technologie nous donne la possibilité de faire des choses qui serait autrement incroyablement compliqués ou même impossibles avec des algorithmes et méthodes traditionnels. </p>
+						<p>Le machine learning est une technologie relativement nouvelle qui fait déjà partie de la <span class="text-decoration-underline">technologie qu’on utilise tous les jours</span> et qui aide dans l’innovation de plusieurs champs comme la <a href="https://ieeexplore.ieee.org/abstract/document/1028420">médicine</a> et <a href="https://academic.oup.com/mnras/article-abstract/485/4/5345/5369636">astrophysique</a> et malgré cela, son potentiel est loin d’être épuisé.</p>
+						<p>C’est pour ça que nous avons décidé de dédier <span class="text-decoration-underline">notre projet</span> à cette technologie qui est <span class="fw-bold">en train de changer nos vies</span> et très probablement notre future aussi.</p>
+					</div>
+					<div class="col-6">
+						<img class="rounded float-end w-100" src="images/brain.jpg" alt="Machine Learning">
+					</div>
+				</div>
+				<span class="p-5"> </span>
+				<div class ="row text-end">
+					<h2 class="p-3 title-expl">Handwritten Digits Recognition</h2>
+					
+					<div class="col-6">
+						<img class="rounded float-end w-100" src="images/robot-read.jpg" alt="Handwritten Digits Recognition">
+					</div>
+					<!--div class ="col-1"></div-->
+					<div class ="col-6">
+						<p>Pour notre projet on a choisi <span class="fw-bold">une application du machine learning</span> simple conceptuellement mais très compliqué à reproduire avec une méthode de programmation traditionnelle : <span class="fw-bold">la reconnaissance de chiffres numériques écrites à la main.</span></p>
+						<p>L’utilisateur devra simplement <span class="text-decoration-underline">envoyer une image avec une chiffre numérique</span> et le logiciel utilisera un de ses deux algorithmes pour reconnaitre le chiffre sur l’image.</p>
+						
+						<h2 class="p-3 title-expl">K-Nearest Neighbors Algorithm</h2>
+						<p>La méthode des <span class="text-decoration-underline">K plus proches voisins (KNN)</span> est un des algorithmes d’apprentissage supervisé les plus simples dans le domaine de l’apprentissage artificiel. <span class="fw-bold">Handwritten Digits Recognition</span> est basé sur cette méthode d'apprentissage.</p>
+						<p>Le principe du KNN est de <span class="fw-bold">prendre les données d’entrainement</span> et de les placer dans un <span class="fw-bold">espace 2D (ou même 3D ou plus)</span> en calculant la position de chaque donnée dans l’espace à travers une fonction mathématique choisie par l’utilisateur. </p>
+						<p>Après avoir positionné les données, <span class="text-decoration-underline">le KNN est prêt à être utilisé</span>. Quand l’algorithme doit faire une prédiction, il place la donnée inconnue dans l’espace avec les données d’entrainement et <span class="fw-bold">cherche les k voisins les plus proches</span> (la variable k est choisi par l’utilisateur).</p>
+						<p><span class="text-decoration-underline">Pour calculer la distance entre deux données</span>, l’utilisateur doit choisir et utiliser une fonction mathématique pour calculer la distance entre deux points, comme par exemple la fonction qui calcule la distance euclidienne entre deux points (si on travaille dans un espace 2D).</p>
+					</div>
+				</div>
+				<span class="p-5"> </span>
+				<div class ="row text-start">
+					<h2 class="p-3 title-expl">Logique du code en pratique</h2>
+					<div class ="col-6">
+						<p>Pour ce qui concerne le code, on a <span class="text-decoration-underline">3 phases principales</span> :</p>
+						<p><span class="fw-bold">1. Training :</span> L’entrainement est basé sur un dataset téléchargé par une source extérieure. Ce dataset est un ensemble de données étiquetées et l’entrainement consiste à demander des centaines ou même des milliers de fois au logiciel de chercher de deviner l’étiquette de chaque donnée et selon le résultat il modifie sa façon de faire ses prévisions. La méthode dont le logiciel qui prend ces décisions et comment après chaque décision il modifie cette méthode, est basé sur l’algorithme utilisé.</p>
+						<p><span class="fw-bold">2. Data preprocessing :</span> Dans cette phase on « nettoie » les données envoyées par l’utilisateur au logiciel à fin qu’elles soient semblables aux données utilisées pour son entrainement, et donc avoir une prévision la plus efficace possible.</p>
+						<p><span class="fw-bold">3. Prevision :</span> Finalement le logiciel analyse les données entrée par l’utilisateur après prétraitement, et fait sa prévision.</p>
+					</div>
+					<div class="col-6">
+						<img class="rounded float-end w-100" src="images/code.jpg" alt="Code Logical">
+					</div>
+				</div>
+			</div>
+			</main>
+
+			<footer class="text-black-50 text-center">
+				<p>Project realized for <a href="https://www.ulb.be/en/programme/info-f308" class="text-black">ULB - INFOF308</a>, by <a href="credits.html" class="text-black">students</a>.</p>
+			</footer>
+	
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
